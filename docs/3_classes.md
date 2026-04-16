@@ -18,6 +18,20 @@
 
 - status
 
+- matricular(plano: Plano), 
+
+- realizarAgendamento(aula: Aula), 
+  
+- efetuarPagamento(), 
+
+- visualizarTreino(), 
+
+-consultarFrequencia(),
+
+- visualizarAvaliacao():,
+
+- consultarFrequencia()
+
 ### Plano
 
 - RF01, RF02, RF04
@@ -32,19 +46,35 @@
 
 - ativo
 
+- duracaoMeses: int
+
+- calcularVencimento(): Date
+
+- alterarPreco(novoPreco: double):
+
 ### Pagamento
 
 - RF03, RF04, RF09
 
 - idPagamento
 
-data
+- data
 
 - valor
 
 - formaPagamento
 
 - status
+
+- processarTransacao(): boolean
+
+- gerarComprovante(): String
+
+- registrar ()
+
+- confirmar ()
+
+- cancelar () 
 
 ### Acesso
 
@@ -56,6 +86,11 @@ data
 
 - autorizado
 
+- registrarEntrada(): void
+
+- registrarSaida(): void
+
+- validarAcesso(): boolean
 ### Aula
 
 - RF06, RF07, RF09
@@ -68,6 +103,14 @@ data
 
 - capacidadeMaxima
 
+-  verificarVagas(): boolean
+  
+-  CancelarAula(): void
+
+- listarInscritos(): List
+
+- agendar aula ()
+
 ### Agendamento
 
 - RF06, RF10
@@ -78,6 +121,10 @@ data
 
 - status
 
+- confirmar(): void
+  
+- cancelar(): void
+
 ### Presenca
 
 - RF07
@@ -87,6 +134,10 @@ data
 - data
 
 - presente
+
+- registrar(): void
+
+- justificarAusencia(motivo: String): 
 
 ### AvaliacaoFisica
 
@@ -106,6 +157,10 @@ data
 
 - anexo
 
+- calcularIMC(): double
+
+- gerarRelatorio(): String
+
 ### Notificacao
 
 - RF10
@@ -120,6 +175,10 @@ data
 
 - mensagem
 
+- enviar(): void
+
+- marcarComoLida(): void
+
 ### Instrutor
 
 - RF07, RF08
@@ -129,6 +188,16 @@ data
 - nome
 
 - especialidade
+  
+- fazerLogin(): boolean
+
+- baterPonto(): void
+
+- ministrarAula(aula: Aula): 
+
+- realizarAvaliacao(aluno: Aluno): 
+
+- prescreverTreino(): void
 
 ### Recepcionista
 
@@ -138,6 +207,12 @@ data
 
 - nome
 
+- cadastrarAluno(aluno: Aluno):
+
+- renovarPlano(aluno: Aluno): 
+
+- venderProduto(): void
+
 ### Gerente
 
 - RF02, RF09
@@ -146,6 +221,13 @@ data
 
 - nome
 
+- contratarFuncionario(f: Funcionario), 
+
+- gerarRelatorioFinanceiro(), 
+
+- configurarPrecos(p: Plano), 
+
+- demitirFuncionario()
 
 
 
