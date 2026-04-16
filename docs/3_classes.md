@@ -145,3 +145,9 @@ data
 - idGerente
 
 - nome
+
+
+
+
+<img width="600" height="242" alt="image" src="https://github.com/user-attachments/assets/806543dc-b66c-4fe3-8e0f-14068d9e65e6" />
+
